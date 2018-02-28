@@ -1147,7 +1147,7 @@ class CenterController extends Controller
                 return redirect('/');
             }
         }
-        return view("ucenter.supplyShow",compact('cate'));
+        return view("ucenter.supplyshow",compact('cate'));
     }
 
     /**新增项目评议

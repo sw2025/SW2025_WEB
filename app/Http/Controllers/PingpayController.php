@@ -74,7 +74,7 @@ class PingpayController extends Controller
             $consultcount=isset($payload['consultCount'])?$payload['consultCount']:0;
             $showconunt=isset($payload['showCount'])?$payload['showCount']:0;
             $meetid=isset($payload['meetid'])?$payload['meetid']:0;
-            $metadata=['payType'=>'payMoney','type'=>$payload['type'],'userid'=>$user,"eventCount"=>$eventcount,"consultCount"=>$consultcount,'showConunt' => $showconunt,'meetid' => $meetid];
+            $metadata=['payType'=>'payMoney','type'=>$payload['type'],'userid'=>$user,"eventCount"=>$eventcount,"consultCount"=>$consultcount,'showCount' => $showconunt,'meetid' => $meetid];
         }
      
         $url =$payload['urlType'];

@@ -2353,8 +2353,8 @@ class MyEnterpriseController extends Controller
             ->first();
         //dd($enterpriseid);
 
-        if($result){
-            $enterpriseid = 999;
+        if(!$result){
+            $enterpriseid = 0000;
         }else{
             $enterpriseid = $result->configid;
         }
