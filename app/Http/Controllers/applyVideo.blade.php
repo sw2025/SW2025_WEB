@@ -343,19 +343,19 @@
                                         if(selected.length==5){
                                             $(".uct-works-expava").show();
                                         }else{
-                                            $.cookie("videodomain",domain,{expires:date,path:'/',domain:'sw2025.com'});
-                                            $.cookie("videodescribe",describe,{expires:date,path:'/',domain:'sw2025.com'});
-                                            $.cookie("videoType",videoType,{expires:date,path:'/',domain:'sw2025.com'});
-                                            $.cookie("videodateStart",dateStart,{expires:date,path:'/',domain:'sw2025.com'});
-                                            $.cookie("videodateEnd",dateEnd,{expires:date,path:'/',domain:'sw2025.com'});
+                                            $.cookie("videodomain",domain,{expires:date,path:'/',domain:'swchina.com'});
+                                            $.cookie("videodescribe",describe,{expires:date,path:'/',domain:'swchina.com'});
+                                            $.cookie("videoType",videoType,{expires:date,path:'/',domain:'swchina.com'});
+                                            $.cookie("videodateStart",dateStart,{expires:date,path:'/',domain:'swchina.com'});
+                                            $.cookie("videodateEnd",dateEnd,{expires:date,path:'/',domain:'swchina.com'});
                                             window.location.href="/uct_video/videoSelect?start="+dateStart+"&end="+dateEnd
                                         }
                                     }else{
-                                        $.cookie("videodomain",domain,{expires:date,path:'/',domain:'sw2025.com'});
-                                        $.cookie("videodescribe",describe,{expires:date,path:'/',domain:'sw2025.com'});
-                                        $.cookie("videoType",videoType,{expires:date,path:'/',domain:'sw2025.com'});
-                                        $.cookie("videodateStart",dateStart,{expires:date,path:'/',domain:'sw2025.com'});
-                                        $.cookie("videodateEnd",dateEnd,{expires:date,path:'/',domain:'sw2025.com'});
+                                        $.cookie("videodomain",domain,{expires:date,path:'/',domain:'swchina.com'});
+                                        $.cookie("videodescribe",describe,{expires:date,path:'/',domain:'swchina.com'});
+                                        $.cookie("videoType",videoType,{expires:date,path:'/',domain:'swchina.com'});
+                                        $.cookie("videodateStart",dateStart,{expires:date,path:'/',domain:'swchina.com'});
+                                        $.cookie("videodateEnd",dateEnd,{expires:date,path:'/',domain:'swchina.com'});
                                         window.location.href="/uct_video/videoSelect?start="+dateStart+"&end="+dateEnd
                                     }
                                 },btn2: function(index, layero){
@@ -363,11 +363,11 @@
                                     $(".submit-audit").css('background-color','#ed0021');
                                     layer.close(index);
                                 },btn3: function(index, layero){
-                                    $.cookie("videoreselect","",{expires:date,path:'/',domain:'sw2025.com'});
-                                    $.cookie("videodomain","",{expires:date,path:'/',domain:'sw2025.com'});
-                                    $.cookie("videoType","",{expires:date,path:'/',domain:'sw2025.com'});
-                                    $.cookie("videodescribe","",{expires:date,path:'/',domain:'sw2025.com'});
-                                    $.cookie("videoindustry","",{expires:date,path:'/',domain:'sw2025.com'});
+                                    $.cookie("videoreselect","",{expires:date,path:'/',domain:'swchina.com'});
+                                    $.cookie("videodomain","",{expires:date,path:'/',domain:'swchina.com'});
+                                    $.cookie("videoType","",{expires:date,path:'/',domain:'swchina.com'});
+                                    $.cookie("videodescribe","",{expires:date,path:'/',domain:'swchina.com'});
+                                    $.cookie("videoindustry","",{expires:date,path:'/',domain:'swchina.com'});
                                     window.location.href="/uct_video/videoSelect?start="+dateStart+"&end="+dateEnd
                                 }
                             });
@@ -381,29 +381,29 @@
                                     if(selected.length==5){
                                         $(".uct-works-expava").show();
                                     }else{
-                                        $.cookie("videodomain",domain,{expires:date,path:'/',domain:'sw2025.com'});
-                                        $.cookie("videodescribe",describe,{expires:date,path:'/',domain:'sw2025.com'});
-                                        $.cookie("videodateStart",dateStart,{expires:date,path:'/',domain:'sw2025.com'});
-                                        $.cookie("videoType",videoType,{expires:date,path:'/',domain:'sw2025.com'});
-                                        $.cookie("videodateEnd",dateEnd,{expires:date,path:'/',domain:'sw2025.com'});
+                                        $.cookie("videodomain",domain,{expires:date,path:'/',domain:'swchina.com'});
+                                        $.cookie("videodescribe",describe,{expires:date,path:'/',domain:'swchina.com'});
+                                        $.cookie("videodateStart",dateStart,{expires:date,path:'/',domain:'swchina.com'});
+                                        $.cookie("videoType",videoType,{expires:date,path:'/',domain:'swchina.com'});
+                                        $.cookie("videodateEnd",dateEnd,{expires:date,path:'/',domain:'swchina.com'});
                                         window.location.href="/uct_video/videoSelect?start="+dateStart+"&end="+dateEnd
                                     }
                                 }else{
-                                    $.cookie("videodomain",domain,{expires:date,path:'/',domain:'sw2025.com'});
-                                    $.cookie("videodescribe",describe,{expires:date,path:'/',domain:'sw2025.com'});
-                                    $.cookie("videoType",videoType,{expires:date,path:'/',domain:'sw2025.com'});
-                                    $.cookie("videodateStart",dateStart,{expires:date,path:'/',domain:'sw2025.com'});
-                                    $.cookie("videodateEnd",dateEnd,{expires:date,path:'/',domain:'sw2025.com'});
+                                    $.cookie("videodomain",domain,{expires:date,path:'/',domain:'swchina.com'});
+                                    $.cookie("videodescribe",describe,{expires:date,path:'/',domain:'swchina.com'});
+                                    $.cookie("videoType",videoType,{expires:date,path:'/',domain:'swchina.com'});
+                                    $.cookie("videodateStart",dateStart,{expires:date,path:'/',domain:'swchina.com'});
+                                    $.cookie("videodateEnd",dateEnd,{expires:date,path:'/',domain:'swchina.com'});
                                     window.location.href="/uct_video/videoSelect?start="+dateStart+"&end="+dateEnd
                                 }
                             }, function(){
-                                $.cookie("videoreselect","",{expires:date,path:'/',domain:'sw2025.com'});
-                                $.cookie("videodomain","",{expires:date,path:'/',domain:'sw2025.com'});
-                                $.cookie("videoType","",{expires:date,path:'/',domain:'sw2025.com'});
-                                $.cookie("videodescribe","",{expires:date,path:'/',domain:'sw2025.com'});
-                                $.cookie("videodateStart","",{expires:date,path:'/',domain:'sw2025.com'});
-                                $.cookie("videodateEnd","",{expires:date,path:'/',domain:'sw2025.com'});
-                                /*$.cookie("videoindustry","",{expires:date,path:'/',domain:'sw2025.com'});*/
+                                $.cookie("videoreselect","",{expires:date,path:'/',domain:'swchina.com'});
+                                $.cookie("videodomain","",{expires:date,path:'/',domain:'swchina.com'});
+                                $.cookie("videoType","",{expires:date,path:'/',domain:'swchina.com'});
+                                $.cookie("videodescribe","",{expires:date,path:'/',domain:'swchina.com'});
+                                $.cookie("videodateStart","",{expires:date,path:'/',domain:'swchina.com'});
+                                $.cookie("videodateEnd","",{expires:date,path:'/',domain:'swchina.com'});
+                                /*$.cookie("videoindustry","",{expires:date,path:'/',domain:'swchina.com'});*/
                                 window.location.href="/uct_video/videoSelect?start="+dateStart+"&end="+dateEnd;
                                 return false;
 
@@ -416,21 +416,21 @@
                         if(selected.length==5){
                             $(".uct-works-expava").show();
                         }else{
-                            $.cookie("videodomain",domain,{expires:date,path:'/',domain:'sw2025.com'});
-                            $.cookie("videodescribe",describe,{expires:date,path:'/',domain:'sw2025.com'});
-                            $.cookie("videoType",videoType,{expires:date,path:'/',domain:'sw2025.com'});
-                            $.cookie("videodateStart",dateStart,{expires:date,path:'/',domain:'sw2025.com'});
-                            $.cookie("videodateEnd",dateEnd,{expires:date,path:'/',domain:'sw2025.com'});
-                            /*$.cookie("videoindustry",industry,{expires:date,path:'/',domain:'sw2025.com'});*/
+                            $.cookie("videodomain",domain,{expires:date,path:'/',domain:'swchina.com'});
+                            $.cookie("videodescribe",describe,{expires:date,path:'/',domain:'swchina.com'});
+                            $.cookie("videoType",videoType,{expires:date,path:'/',domain:'swchina.com'});
+                            $.cookie("videodateStart",dateStart,{expires:date,path:'/',domain:'swchina.com'});
+                            $.cookie("videodateEnd",dateEnd,{expires:date,path:'/',domain:'swchina.com'});
+                            /*$.cookie("videoindustry",industry,{expires:date,path:'/',domain:'swchina.com'});*/
                             window.location.href="/uct_video/videoSelect?start="+dateStart+"&end="+dateEnd
                         }
                     }else{
-                        $.cookie("videodomain",domain,{expires:date,path:'/',domain:'sw2025.com'});
-                        $.cookie("videodescribe",describe,{expires:date,path:'/',domain:'sw2025.com'});
-                        $.cookie("videoType",videoType,{expires:date,path:'/',domain:'sw2025.com'});
-                        $.cookie("videodateStart",dateStart,{expires:date,path:'/',domain:'sw2025.com'});
-                        $.cookie("videodateEnd",dateEnd,{expires:date,path:'/',domain:'sw2025.com'});
-                        /*$.cookie("videoindustry",industry,{expires:date,path:'/',domain:'sw2025.com'});*/
+                        $.cookie("videodomain",domain,{expires:date,path:'/',domain:'swchina.com'});
+                        $.cookie("videodescribe",describe,{expires:date,path:'/',domain:'swchina.com'});
+                        $.cookie("videoType",videoType,{expires:date,path:'/',domain:'swchina.com'});
+                        $.cookie("videodateStart",dateStart,{expires:date,path:'/',domain:'swchina.com'});
+                        $.cookie("videodateEnd",dateEnd,{expires:date,path:'/',domain:'swchina.com'});
+                        /*$.cookie("videoindustry",industry,{expires:date,path:'/',domain:'swchina.com'});*/
                         window.location.href="/uct_video/videoSelect?start="+dateStart+"&end="+dateEnd
                     }
                 }
@@ -503,13 +503,13 @@
             }
             var date = new Date();
             date.setTime(date.getTime() + (120 * 60 * 1000));
-            $.cookie("videodomain",domain,{expires:date,path:'/',domain:'sw2025.com'});
-            $.cookie("videodescribe",describe,{expires:date,path:'/',domain:'sw2025.com'});
-            $.cookie("videoType",videoType,{expires:date,path:'/',domain:'sw2025.com'});
-            $.cookie("videodateStart",dateStart,{expires:date,path:'/',domain:'sw2025.com'});
-            $.cookie("videodateEnd",dateEnd,{expires:date,path:'/',domain:'sw2025.com'});
-            $.cookie("videoreselect",expertIds,{expires:date,path:'/',domain:'sw2025.com'});
-            $.cookie("state",state,{expires:date,path:'/',domain:'sw2025.com'});
+            $.cookie("videodomain",domain,{expires:date,path:'/',domain:'swchina.com'});
+            $.cookie("videodescribe",describe,{expires:date,path:'/',domain:'swchina.com'});
+            $.cookie("videoType",videoType,{expires:date,path:'/',domain:'swchina.com'});
+            $.cookie("videodateStart",dateStart,{expires:date,path:'/',domain:'swchina.com'});
+            $.cookie("videodateEnd",dateEnd,{expires:date,path:'/',domain:'swchina.com'});
+            $.cookie("videoreselect",expertIds,{expires:date,path:'/',domain:'swchina.com'});
+            $.cookie("state",state,{expires:date,path:'/',domain:'swchina.com'});
             $(this).attr('disabled',true);
             $(this).html('正在提交');
             $.ajax({
@@ -521,14 +521,14 @@
                     var date = new Date();
                     date.setTime(date.getTime() + (120 * 60 * 1000));
                     if(res['icon'] == 1){
-                        $.cookie("videoreselect","",{expires:date,path:'/',domain:'sw2025.com'});
-                        $.cookie("videodomain","",{expires:date,path:'/',domain:'sw2025.com'});
-                        $.cookie("videoType","",{expires:date,path:'/',domain:'sw2025.com'});
-                        $.cookie("videodescribe","",{expires:date,path:'/',domain:'sw2025.com'});
-                        $.cookie("videodateStart","",{expires:date,path:'/',domain:'sw2025.com'});
-                        $.cookie("videodateEnd","",{expires:date,path:'/',domain:'sw2025.com'});
-                        $.cookie("state","",{expires:date,path:'/',domain:'sw2025.com'});
-                        /*$.cookie("videoindustry","",{expires:date,path:'/',domain:'sw2025.com'});*/
+                        $.cookie("videoreselect","",{expires:date,path:'/',domain:'swchina.com'});
+                        $.cookie("videodomain","",{expires:date,path:'/',domain:'swchina.com'});
+                        $.cookie("videoType","",{expires:date,path:'/',domain:'swchina.com'});
+                        $.cookie("videodescribe","",{expires:date,path:'/',domain:'swchina.com'});
+                        $.cookie("videodateStart","",{expires:date,path:'/',domain:'swchina.com'});
+                        $.cookie("videodateEnd","",{expires:date,path:'/',domain:'swchina.com'});
+                        $.cookie("state","",{expires:date,path:'/',domain:'swchina.com'});
+                        /*$.cookie("videoindustry","",{expires:date,path:'/',domain:'swchina.com'});*/
                         if(state == 0){
                             /*layer.msg(res.msg,{'icon':6,'time':5000},function () {
                                 window.location = '{{url('uct_video')}}';
@@ -587,9 +587,9 @@
                                 window.location.href="/"+res['url'];
                             }
                             if(res['code']==6){
-                                str="<span></span>单次缴费：￥<b class='money'>{{env('consultMemberMoney')}}</b>/{{env('Time')}}分钟 &nbsp;&nbsp;&nbsp;&nbsp;充值时间 <input type='number' class='re-counts times'  min='1' style='border: 1px solid #ccc;padding-left: 10px;box-sizing:border-box;width: 140px;'>分钟"
+                                str="<span></span>单次缴费：￥<b class='money'>{{env('consultMemberMoney')}}</b>/{{env('Time')}}分钟 &nbsp;&nbsp;&nbsp;&nbsp;充值时间 <input type='number' class='re-counts times'  min='1' style='border: 1px solid #ccc;padding-left: 10px;box-sizing:border-box;width: 140px;'>"
                             }else{
-                                str="<span></span>单次缴费：￥<b class='money'>{{env('Money')}}</b>/{{env('Time')}}分钟 &nbsp;&nbsp;&nbsp;&nbsp;充值时间 <input type='number' class='re-counts times'  min='1' style='border: 1px solid #ccc;padding-left: 10px;box-sizing:border-box;width: 140px;'>分钟"
+                                str="<span></span>单次缴费：￥<b class='money'>{{env('Money')}}</b>/{{env('Time')}}分钟 &nbsp;&nbsp;&nbsp;&nbsp;充值时间 <input type='number' class='re-counts times'  min='1' style='border: 1px solid #ccc;padding-left: 10px;box-sizing:border-box;width: 140px;'>"
                             }
                             pop(str);
                             layer.close(index);
@@ -619,8 +619,7 @@
                     alert("请填写充值时间");
                     return false;
                 }
-                //amount=amounts*consultCount;
-                amount=10*consultCount;
+                amount=amounts*consultCount;
                 memberId=0;
             }else{
                 payType="member";
