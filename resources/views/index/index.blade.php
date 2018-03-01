@@ -34,14 +34,14 @@
                         {{--<p class="item-desc">解决企业遇到各类问题</p>--}}
                     </div>
                     <div class="item-con-hover">
-                       <p><br /><span style="font-size: 1.5em;">项目评议</span><br /><br /><br /><span style="font-size: 1.5em;">约见投资人</span><br /><br /><br /><span style="font-size: 1.5em;">深度孵化</span><br /><br /></p>
+                       <p><br /><span  class="supplyShow" style="font-size: 1.5em;">项目评议</span><br /><br /><br /><span class="linemeet" style="font-size: 1.5em;">约见投资人</span><br /><br /><br /><span class="hatch" style="font-size: 1.5em;">深度孵化</span><br /><br /></p>
                     </div>
                 </a></li>
             <li class="item col-md-3 col-xs-6"><a href="javascript:;">
                     <div class="item-con dif-hexagon4">
                         <span class="hexagon"></span>
                         <h2 class="number">02</h2>
-                        <span class="item-tit">企业成长</span>
+                        <span class="item-tit">成长企业</span>
                         {{--<p class="item-desc">解决企业遇到各类问题</p>--}}
                     </div>
                     <div class="item-con-hover">
@@ -58,17 +58,13 @@
                         <p><br /><span style="font-size: 1.5em;">方向评价</span><br /><br /><br /><span style="font-size: 1.5em;">项目评价</span><br /><br /><br /><span style="font-size: 1.5em;">众筹</span><br /><br /></p>
                     </div>
                 </a></li>
-            <li class="item col-md-3 col-xs-6"><a href="javascript:;">
+            <li class="item col-md-3 col-xs-6"><a href="{{'service'}}">
                     <div class="item-con dif-hexagon1">
                         <span class="hexagon"></span>
                         <h2 class="number">04</h2>
-                        <span class="item-tit">文宣</span>
-                    </div>
-                    <div class="item-con-hover">
-                        <p><br /><span style="font-size: 1.5em;">战略定位</span><br /><br /><span style="font-size: 1.5em;">战略执行</span><br /><br /><span style="font-size: 1.5em;">商业模式</span><br /><br /><span style="font-size: 1.5em;">项目评价</span> </p>
+                        <span class="item-tit">更多服务</span>
                     </div>
                 </a></li>
-
         </ul>
         <div class="listbottom-link"><a href="javascript:;" class="become-expert homepage-link">入驻平台</a></div>
     </div>
@@ -396,6 +392,7 @@
         {
             case '01':
                var domain='找资金';
+               return false;
                 break;
             case '02':
                 var domain='找市场';
@@ -409,14 +406,73 @@
             default:
                 var domain='全部';
         }
+
         if(!$.cookie('userId')){
             window.location.href="/login"
             return false;
         } else {
             window.location.href="{{asset('uct_works').'?domain='}}"+domain;
         }
-
     });
+
+    $('.linemeet').click(function () {
+        window.location.href="{{asset('expert').'?role=专家&ordertime=desc'}}";
+    })
+    $('.supplyShow').click(function () {
+        var aa = $(this).parent('p').parent('div').prev('div').children('h2').html();
+        switch(aa)
+        {
+            case '01':
+                var domain='找资金';
+                break;
+            case '02':
+                var domain='找市场';
+                break;
+            case '03':
+                var domain='找技术';
+                break;
+            case '04':
+                var domain='定战略';
+                break;
+            default:
+                var domain='全部';
+        }
+        if(!$.cookie('userId')){
+            window.location.href="/login"
+            return false;
+        } else {
+            window.location.href="{{asset('uct_myshow')}}";
+        }
+    })
+
+    $('.hatch').click(function () {
+        var aa = $(this).parent('p').parent('div').prev('div').children('h2').html();
+        switch(aa)
+        {
+            case '01':
+                var domain='找资金';
+                break;
+            case '02':
+                var domain='找市场';
+                break;
+            case '03':
+                var domain='找技术';
+                break;
+            case '04':
+                var domain='定战略';
+                break;
+            default:
+                var domain='全部';
+        }
+        if(!$.cookie('userId')){
+            window.location.href="/login"
+            return false;
+        } else {
+            window.location.href = "{{asset('uct_works').'?domain='}}" + domain;
+        }
+    })
+
+
     function expertputneed () {
         $.post('{{url('myneed/verifyputneed')}}',{'role':'专家'},function (data) {
             if(data.type == 3){

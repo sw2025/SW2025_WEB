@@ -137,7 +137,7 @@
     </div>
 </div>
 <!-- 公共header / end -->
-<div class="ucenter  v-bg5">
+<div class="ucenter  v-bg5" style="height:920px">
     <div class="wrap clearfix">
         <!-- 侧边栏公共部分/start -->
         <div class="v-aside beexpert">
