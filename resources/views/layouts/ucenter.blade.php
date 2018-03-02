@@ -100,7 +100,7 @@
     </div>
 </div>
 <!-- 公共header / end -->
-<div class="ucenter v-work-manage">
+<div class="ucenter v-work-manage" style="height:920px">
     <div class="wrap clearfix">
         <!-- 侧边栏公共部分/start -->
         <div class="v-aside clearfix">
@@ -149,19 +149,19 @@
                                 </ul>
                             </div>
                             <div class="mainmenu">
-                                <a id="uct_video" href="{{asset('uct_video')}}"  class="v-ucenter-nav-item aa">
+                                <a id="uct_video" href="{{asset('uct_video')}}" class="v-ucenter-nav-item aa">
                                     <img src="{{asset('img/vicon02.png')}}" alt="视频会议" />
-                                    视频会议
+                                    约见专家
                                 </a>
                                 <span class="v-ucenter-nav-item phone">
                                     <img src="{{asset('img/vicon02.png')}}" alt="视频会议" />
-                                    视频会议
+                                    约见专家
                                 </span>
                                 <ul class="submenu">
-                                    <li><a href="{{url('/uct_video/applyVideo')}}?people=1">发起一对一视频</a></li>
-                                    <li><a href="{{url('/uct_video/applyVideo')}}">发起多人会议</a></li>
-                                    <li><a href="{{asset('uct_video').'?consultType=单人'}}">查看一对一视频</a></li>
-                                    <li><a href="{{asset('uct_video').'?consultType=多人'}}">查看多人会议</a></li>
+                                    <li><a href="{{url('/uct_video/applyVideo')}}">发起线上约见</a></li>
+                                    <li><a href="{{url('/uct_video/applyVideo')}}">发起私董会</a></li>
+                                    <li><a href="{{asset('uct_video').'?consultType=单人'}}">查看线上约谈</a></li>
+                                    <li><a href="{{asset('uct_video').'?consultType=多人'}}">查看私董会</a></li>
                                     <li><a href="{{asset('uct_video/uct_linemeet')}}">查看线下约见</a></li>
                                 </ul>
                             </div>
@@ -252,6 +252,7 @@
 </div>
 <!-- 企业办事服务 / end -->
 <!-- 公共footer / end -->
+
 <div class="footer">
     <div class="container clearfix">
         <!-- <div class="row"> -->
