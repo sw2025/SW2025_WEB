@@ -84,7 +84,7 @@
             var reg1 = /^1[3578][0-9]{9}$/;//手机号
             if(!(reg1.test(phone))){
                 layer.tips('手机号不能为空或输入错误', '.user-tel', {
-                    tips: [2, '#00a7ed'],
+                    tips: [2, '#e25633'],
                     time: 4000
                 });
                 return false;
@@ -97,13 +97,13 @@
                 success:function(res){
                     if(res['code']=="code"){
                         layer.tips(res['msg'], '.get-test', {
-                            tips: [2, '#00a7ed'],
+                            tips: [2, '#e25633'],
                             time: 4000
                         });
                         return false;
                     }else if(res['code']=="phone"){
                         layer.tips(res['msg'], '.user-tel', {
-                            tips: [2, '#00a7ed'],
+                            tips: [2, '#e25633'],
                             time: 4000
                         });
                         return false;
@@ -124,28 +124,28 @@
         var role=$(".user-role-opt a").html();
         if(!(reg1.test(phone))){
             layer.tips('手机号不能为空或输入错误', '.user-tel', {
-                tips: [2, '#00a7ed'],
+                tips: [2, '#e25633'],
                 time: 4000
             });
             return false;
         };
         if(!(reg2.test(pwd))){
             layer.tips('密码只能是6-18位的数字或者字母', '.user-pwd', {
-                tips: [2, '#00a7ed'],
+                tips: [2, '#e25633'],
                 time: 4000
             });
             return false;
         };
         if(!code){
             layer.tips('验证码不能为空!', '.user-test', {
-                tips: [2, '#00a7ed'],
+                tips: [2, '#e25633'],
                 time: 4000
             });
             return false;
         }
         if(role=="角色"){
             layer.tips('角色必选', '.user-role-opt', {
-                tips: [2, '#00a7ed'],
+                tips: [2, '#e25633'],
                 time: 4000
             });
             return false;
@@ -160,14 +160,14 @@
             success:function(res){
                 if(res['code']=="phone"){
                     layer.tips(res['msg'], '.user-tel', {
-                        tips: [2, '#00a7ed'],
+                        tips: [2, '#e25633'],
                         time: 4000
                     });
                     $(that).removeAttr('disabled');
                     $(that).html('注册');
                 }else if(res['code']=="code"){
                     layer.tips(res['msg'], '.user-test-inp', {
-                        tips: [2, '#00a7ed'],
+                        tips: [2, '#e25633'],
                         time: 4000
                     });
                     $(that).removeAttr('disabled');
@@ -196,7 +196,7 @@
     });
 //    $("#reMark").hover(function(){
 //        layer.tips('企业用户可在平台寻找专家解决自己的企业各类问题<br/>专家用户可帮助企业解决问题或向企业推广自己的成果', '.user-role-opt', {
-//            tips: [2, '#00a7ed'],
+//            tips: [2, '#e25633'],
 //            time: 4000
 //        });
 //    },function(){
