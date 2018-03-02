@@ -516,7 +516,7 @@ class MyExpertController extends Controller
 
     /****************************************************/
     public function myask(){
-        
+
         $userId=session('userId');
         $expert = DB::table('t_u_expert')->where('userid',session('userId'))->first();
         if(empty($expert)){
