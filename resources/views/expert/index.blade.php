@@ -145,7 +145,7 @@
                 </a>
                 <div class="exp-list-icon">
                     <span style="position: relative;left:-52px;">
-                        <button id="{{$v->userid}}" islinemeet="{{$v->islinemeet}}" name="{{$v->expertname}}" linefee="{{$v->linefee}}" expertid="{{$v->expertid}}" showimage="{{$v->showimage}}" class="linemeet" style="border-style:solid;background-color:transparent;width: 100px;height: 32px;">线下约见</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button id="{{$v->userid}}"  islinemeet="{{$v->islinemeet}}" name="{{$v->expertname}}" linefee="{{$v->linefee}}" expertid="{{$v->expertid}}" showimage="{{$v->showimage}}" class="linemeet" style="border-style:solid;background-color:transparent;width: 100px;height: 32px;">线下约见</button>&nbsp;&nbsp;&nbsp;&nbsp;
                         <button id="{{$v->userid}}" isonlinemeet="{{$v->isonlinemeet}}" name="{{$v->expertname}}" linefee="{{$v->linefee}}" expertid="{{$v->expertid}}" showimage="{{$v->showimage}}" class="onlinemeet hover" style=" border-style:solid;background-color:transparent;width: 120px;height: 32px;">线上约见</button>
                     </span>
 
